@@ -4,7 +4,7 @@ Nuitka extractor, nuitka derlenmiş Python yürütülebilir dosyalarını ayıkl
 
 Nuitka Python kodunu yerel koda derler. Nuitka ile derlenmiş bir yürütülebilir dosya pyc dosyası içermez. Dolayısıyla bu araç yalnızca DLL'leri, paylaşılan kütüphaneleri ve yürütülebilir dosyaya gömülü diğer ikili varlıkları ayıklayabilir.
 
-## Usage
+## Kullanım
 
 Önceden derlenmiş ikili dosyalar sürümlerden indirilebilir.
 
