@@ -1,14 +1,14 @@
 # Nuitka Extractor
 
-Nuitka extractor is a tool to extract nuitka compiled Python executables. In particular only onefile (single file) executables are supported. The tool can extract both Windows PE as well as Linux ELF binaries.
+Nuitka extractor, nuitka derlenmiş Python yürütülebilir dosyalarını ayıklamak için bir araçtır. Özellikle sadece onefile (tek dosya) yürütülebilir dosyalar desteklenir. Araç hem Windows PE hem de Linux ELF ikili dosyalarını çıkarabilir.
 
-Nuitka compiles Python code to native code.  A nuitka compiled executable doesn't contain pyc file. Hence this tool can only extract DLLs, shared libraries and other binary assets embedded in the executable.
+Nuitka Python kodunu yerel koda derler. Nuitka ile derlenmiş bir yürütülebilir dosya pyc dosyası içermez. Dolayısıyla bu araç yalnızca DLL'leri, paylaşılan kütüphaneleri ve yürütülebilir dosyaya gömülü diğer ikili varlıkları ayıklayabilir.
 
 ## Usage
 
-Precompiled binaries can be downloaded from releases.
+Önceden derlenmiş ikili dosyalar sürümlerden indirilebilir.
 
-Simply pass the path to the file as an argument.
+Dosyanın yolunu bir argüman olarak geçmeniz yeterlidir.
 
 ```
 $ ./nuitka-extractor <file name>
@@ -20,8 +20,8 @@ X:\> nuitka-extractor.exe <file name>
 
 ## ToDo
 
-- Signed PE execuables are not yet supported. Strip the certificate before extraction.
-- Support for executables with a hardcoded extraction directory. For such executables, nuitka includes the crc32 of each embedded file within the payload. Thus the payload format is slightly changed.
+- İmzalı PE çalıştırılabilirleri henüz desteklenmemektedir. Çıkarma işleminden önce sertifikayı silin.
+- Sabit kodlanmış bir çıkarma dizinine sahip yürütülebilir dosyalar için destek. Bu tür yürütülebilir dosyalar için, nuitka her gömülü dosyanın crc32'sini yüke dahil eder. Böylece yük formatı biraz değişir.
 
 ## License
 
